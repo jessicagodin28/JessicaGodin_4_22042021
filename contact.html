@@ -106,40 +106,46 @@
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-6">
-              <form
-                id="form_1"
-                novalidate
-                success-msg="Your message has been sent."
-                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-              >
+              <form id="form_1" novalidate>
                 <div class="form-group">
-                  <label> Nom </label>
-                  <input id="name" class="form-control" required />
-                </div>
-                <div class="form-group">
-                  <label> Adresse email </label>
+                  <label for="name" class="lead">Nom</label>
                   <input
-                    id="email"
+                    type="text"
+                    name="name"
+                    id="name"
                     class="form-control"
-                    type="email"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label> Comment nous avez-vous connu ? </label>
+                  <label for="email" class="lead">Adresse email</label>
                   <input
-                    class="form-control"
                     type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="input_504" class="lead"
+                    >Comment nous avez-vous connu ?</label
+                  >
+                  <input
+                    type="text"
+                    name="input_504"
+                    class="form-control"
                     required
                     id="input_504"
                   />
                 </div>
                 <div class="form-group">
-                  <label>
-                    Brief de votre projet (Ajoutez autant de détails que
-                    nécessaire)<br /> </label
-                  ><textarea
+                  <label for="message" class="lead"
+                    >Brief de votre projet</label
+                  >
+                  <textarea
                     id="message"
+                    name="brief"
                     class="form-control"
                     rows="4"
                     cols="50"

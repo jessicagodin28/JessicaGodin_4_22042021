@@ -100,7 +100,7 @@ a:hover {
 }
 
 .d-bloc {
-  color: rgba(255, 255, 255, 0.7);
+  color: black;
 }
 
 .d-bloc button:hover {
@@ -116,7 +116,7 @@ a:hover {
 }
 
 .d-bloc .divider-h span {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: black;
 }
 
 .d-bloc .a-btn,
@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-  color: rgba(255, 255, 255, 0.6);
+  color: black;
 }
 
 .d-bloc .a-btn:hover,
@@ -340,6 +340,11 @@ a:hover {
 .navbar-toggle {
   margin: 10px 10px 0 0;
   border: 0px;
+}
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
 }
 
 .navbar-toggle:hover {
@@ -653,7 +658,7 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #575757 !important;
+  color: black !important;
 }
 
 .container {
@@ -679,7 +684,7 @@ a {
 }
 
 p {
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -704,6 +709,8 @@ p {
 .social {
   max-width: 400px;
   margin: auto auto auto auto;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
@@ -738,7 +745,8 @@ h4 {
 }
 
 .white {
-  color: #ffffff !important;
+  color: black !important;
+  font-size: 16px;
 }
 
 .portfolio-thumb {
@@ -777,12 +785,12 @@ h4 {
 }
 
 .tc-white {
-  color: #f3976c !important;
+  color: white !important;
 }
 
 .btn-atomic-tangerine {
   background: #f3976c;
-  color: #ffffff !important;
+  color: black !important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -850,7 +858,7 @@ h4 {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -860,7 +868,7 @@ h4 {
   .b-parallax {
     background-attachment: scroll;
   }
-}
+} */
 
 @media (max-width: 991px) {
   .container {
@@ -874,10 +882,7 @@ h4 {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-  }
+
   .bloc-group,
   .bloc-group .bloc {
     display: block;
@@ -886,8 +891,6 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
   }
 }
 
@@ -911,6 +914,7 @@ h4 {
   #disqus_thread {
     padding-left: 10px !important;
     padding-right: 10px !important;
+    margin-top: 1em;
   }
   .b-parallax {
     background-attachment: scroll;
@@ -1018,7 +1022,7 @@ h4 {
     margin-top: 30px;
   }
   form {
-    padding: 5px;
+    padding: 15px;
   }
   .close-lightbox {
     display: inline-block;
